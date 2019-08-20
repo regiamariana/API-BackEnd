@@ -51,5 +51,19 @@ namespace Senai.Filmes.WebApi.Repositories
             return genero;
 
         }
+        //ATENÇÃO SUA TOLIIIINHA, ESSE MÉTODO VAI USAR OS ATRIBUTOS DO DOMAIN,
+        //POR ISSO ESTÁ ESCRITO DO LADO DO PUBLIC
+        //estamos fazendo conex com o banco, preste atençao grr
+        public GeneroDomains BuscarPorId(int id)
+        {
+            string query = "SELECT IdGenero, Nome FROM Generos WHERE IdGenero = @IdGenero";
+            //abrir conexão com bd
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            //EEEEEEEEEEEEI MARIANA
+            //EI AQUI É VC FALANDO PRESTA ATENÇÃO
+            //StringConexao É O QUE FAZ LINK E "PUXA" O BANCO PARA O COD
+            //esses comentários são verdes demais eca
+
+        }
     }
 }

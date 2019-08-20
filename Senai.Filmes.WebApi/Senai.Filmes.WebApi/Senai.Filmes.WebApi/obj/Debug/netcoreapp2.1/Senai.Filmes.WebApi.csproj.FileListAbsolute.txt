@@ -12,3 +12,5 @@ C:\Users\47425337800\Documents\sprint2Backend\Senai.Filmes.WebApi\Senai.Filmes.W
 C:\Users\47425337800\Documents\sprint2Backend\Senai.Filmes.WebApi\Senai.Filmes.WebApi\Senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\Senai.Filmes.WebApi.RazorTargetAssemblyInfo.cache
 C:\Users\47425337800\Documents\sprint2Backend\Senai.Filmes.WebApi\Senai.Filmes.WebApi\Senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\Senai.Filmes.WebApi.dll
 C:\Users\47425337800\Documents\sprint2Backend\Senai.Filmes.WebApi\Senai.Filmes.WebApi\Senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\Senai.Filmes.WebApi.pdb
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Filmes.WebApi\Senai.Filmes.WebApi\Senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\Senai.Filmes.WebApi.dll
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Filmes.WebApi\Senai.Filmes.WebApi\Senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\Senai.Filmes.WebApi.pdb

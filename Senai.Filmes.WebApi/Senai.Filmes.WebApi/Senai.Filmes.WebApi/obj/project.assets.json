@@ -11807,11 +11807,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\47425337800\\Documents\\sprint2Backend\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\47425337800\\Documents\\sprint2Backend\\API-BackEnd\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi.csproj",
       "projectName": "Senai.Filmes.WebApi",
-      "projectPath": "C:\\Users\\47425337800\\Documents\\sprint2Backend\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi.csproj",
+      "projectPath": "C:\\Users\\47425337800\\Documents\\sprint2Backend\\API-BackEnd\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi.csproj",
       "packagesPath": "C:\\Users\\47425337800\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\47425337800\\Documents\\sprint2Backend\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi\\obj\\",
+      "outputPath": "C:\\Users\\47425337800\\Documents\\sprint2Backend\\API-BackEnd\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

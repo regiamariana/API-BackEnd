@@ -30,5 +30,19 @@ namespace Senai.Filmes.WebApi.Controllers
             //return estilos;
             return GeneroRepository.Listar();
         }
+
+        // o controller devera receber o id que eu quero buscar
+        // GET /api/estilos/3
+        //BUSCAGEM!!!!!!!!!!!
+        //importante especificar no get o id
+        [HttpGet("{id}")]
+        public IActionResult BuscarPorId(int id)
+        {
+            //chamar o método lá do repositório::::::::::
+            GeneroDomains generoDomains = GeneroRepository.BuscarPorId(id);
+            if (generoDomains == null)
+                return NotFound();
+            return Ok(generoDomains);
+        }
     }
 }
