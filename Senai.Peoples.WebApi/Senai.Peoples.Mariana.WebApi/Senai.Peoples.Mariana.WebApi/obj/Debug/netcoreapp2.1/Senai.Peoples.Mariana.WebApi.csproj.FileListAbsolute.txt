@@ -1,0 +1,14 @@
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Peoples.WebApi\Senai.Peoples.Mariana.WebApi\Senai.Peoples.Mariana.WebApi\bin\Debug\netcoreapp2.1\Senai.Peoples.Mariana.WebApi.deps.json
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Peoples.WebApi\Senai.Peoples.Mariana.WebApi\Senai.Peoples.Mariana.WebApi\bin\Debug\netcoreapp2.1\Senai.Peoples.Mariana.WebApi.runtimeconfig.json
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Peoples.WebApi\Senai.Peoples.Mariana.WebApi\Senai.Peoples.Mariana.WebApi\bin\Debug\netcoreapp2.1\Senai.Peoples.Mariana.WebApi.runtimeconfig.dev.json
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Peoples.WebApi\Senai.Peoples.Mariana.WebApi\Senai.Peoples.Mariana.WebApi\bin\Debug\netcoreapp2.1\Senai.Peoples.Mariana.WebApi.dll
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Peoples.WebApi\Senai.Peoples.Mariana.WebApi\Senai.Peoples.Mariana.WebApi\bin\Debug\netcoreapp2.1\Senai.Peoples.Mariana.WebApi.pdb
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Peoples.WebApi\Senai.Peoples.Mariana.WebApi\Senai.Peoples.Mariana.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.Mariana.WebApi.csprojAssemblyReference.cache
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Peoples.WebApi\Senai.Peoples.Mariana.WebApi\Senai.Peoples.Mariana.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.Mariana.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Peoples.WebApi\Senai.Peoples.Mariana.WebApi\Senai.Peoples.Mariana.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.Mariana.WebApi.RazorAssemblyInfo.cache
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Peoples.WebApi\Senai.Peoples.Mariana.WebApi\Senai.Peoples.Mariana.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.Mariana.WebApi.RazorAssemblyInfo.cs
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Peoples.WebApi\Senai.Peoples.Mariana.WebApi\Senai.Peoples.Mariana.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.Mariana.WebApi.AssemblyInfoInputs.cache
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Peoples.WebApi\Senai.Peoples.Mariana.WebApi\Senai.Peoples.Mariana.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.Mariana.WebApi.AssemblyInfo.cs
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Peoples.WebApi\Senai.Peoples.Mariana.WebApi\Senai.Peoples.Mariana.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.Mariana.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Peoples.WebApi\Senai.Peoples.Mariana.WebApi\Senai.Peoples.Mariana.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.Mariana.WebApi.dll
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Peoples.WebApi\Senai.Peoples.Mariana.WebApi\Senai.Peoples.Mariana.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.Mariana.WebApi.pdb
