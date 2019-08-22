@@ -40,7 +40,8 @@ namespace Senai.Peoples.Mariana.WebApi.Repositories
                         {
                             IdFuncionarios = Convert.ToInt32(sdr["IDFUNCIONARIOS"]),
                             Nome = sdr["NOME"].ToString(),
-                            datanascimento = Convert.ToDateTime(sdr["datanascimento"])
+                           // datanascimento = Convert.ToDateTime(sdr["datanascimento"])
+                           //RESOLVER DEPOIS 
                         };
                         funcionarios.Add(funcionario);
                     }

@@ -16,6 +16,15 @@ namespace Senai.Peoples.Mariana.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1);
+
+            services.AddSwaggerGen(c =>
+                   c.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info
+                   {
+                       Title = "Peoples API",
+                       Version = "v1"
+                   })
+            );
+
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy", builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials());
@@ -31,6 +40,12 @@ namespace Senai.Peoples.Mariana.WebApi
             }
 
             app.UseCors("CorsPolicy");
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Peoples API V1");
+            }
+            );
             app.UseMvc();
         }
     }

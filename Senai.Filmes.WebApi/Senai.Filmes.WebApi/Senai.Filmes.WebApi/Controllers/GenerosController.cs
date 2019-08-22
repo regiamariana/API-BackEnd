@@ -44,5 +44,24 @@ namespace Senai.Filmes.WebApi.Controllers
                 return NotFound();
             return Ok(generoDomains);
         }
+
+        // cadastrar um novo
+        [HttpPost]
+        public IActionResult Cadastrar(GeneroDomains generoDomains)
+        {
+            GeneroRepository.Cadastrar(generoDomains);
+            return Ok();
+        }
+
+
+        // DELETE /api/estilos/1009
+        [HttpDelete("{id}")]
+        public IActionResult Deletar(int id)
+        {
+            GeneroRepository.Deletar(id);
+            return Ok();
+        }
+
+
     }
 }

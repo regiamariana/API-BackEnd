@@ -56,14 +56,83 @@ namespace Senai.Filmes.WebApi.Repositories
         //estamos fazendo conex com o banco, preste atençao grr
         public GeneroDomains BuscarPorId(int id)
         {
-            string query = "SELECT IdGenero, Nome FROM Generos WHERE IdGenero = @IdGenero";
-            //abrir conexão com bd
+            string Query = "SELECT IdGenero, Nome FROM Generos WHERE IdGenero = @IdGenero";
+            // abrir a conexao
             using (SqlConnection con = new SqlConnection(StringConexao))
-            //EEEEEEEEEEEEI MARIANA
-            //EI AQUI É VC FALANDO PRESTA ATENÇÃO
-            //StringConexao É O QUE FAZ LINK E "PUXA" O BANCO PARA O COD
-            //esses comentários são verdes demais eca
+            {
+                con.Open();
+                SqlDataReader sdr;
 
+                using (SqlCommand cmd = new SqlCommand(Query, con))
+                {
+                    cmd.Parameters.AddWithValue("@IdGenero", id);
+                    sdr = cmd.ExecuteReader();
+
+                    if (sdr.HasRows)
+                    {
+                        // ler o que tem no sdr
+                        while (sdr.Read())
+                        {
+                            GeneroDomains genero = new GeneroDomains
+                            {
+                                IdGenero = Convert.ToInt32(sdr["IdGenero"]),
+                                Nome = sdr["Nome"].ToString()
+                            };
+                            return genero;
+                        }
+                    }
+                    return null;
+
+                    // retornar
+                }
+
+
+            }
+        }
+
+        public void Cadastrar(GeneroDomains generoDomains)
+        {
+            string Query = "INSERT INTO Generos (Nome) VALUES (@Nome)";
+
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            {
+                SqlCommand cmd = new SqlCommand(Query, con);
+                cmd.Parameters.AddWithValue("@Nome", generoDomains.Nome);
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        public void Deletar(int id)
+        {
+            string Query = "DELETE FROM Generos WHERE IdGenero = @Id";
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            {
+                using (SqlCommand cmd = new SqlCommand(Query, con))
+                {
+                    cmd.Parameters.AddWithValue("@Id", id);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void Atualizar(GeneroDomains generoDomains)
+        {
+            string Query = "UPDATE Generos SET Nome = @Nome WHERE IdGenero = @Id";
+            // estabelecer a conexao
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            {
+                // comando
+                SqlCommand cmd = new SqlCommand(Query, con);
+                cmd.Parameters.AddWithValue("@Nome", generoDomains.Nome);
+                cmd.Parameters.AddWithValue("@Id", generoDomains.IdGenero);
+                // abre a conexao
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+
+            // executa
         }
     }
 }
