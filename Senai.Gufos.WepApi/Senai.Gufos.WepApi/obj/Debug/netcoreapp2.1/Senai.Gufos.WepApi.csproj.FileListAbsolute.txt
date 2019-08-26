@@ -1,0 +1,14 @@
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Gufos.WepApi\Senai.Gufos.WepApi\bin\Debug\netcoreapp2.1\Senai.Gufos.WepApi.deps.json
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Gufos.WepApi\Senai.Gufos.WepApi\bin\Debug\netcoreapp2.1\Senai.Gufos.WepApi.runtimeconfig.json
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Gufos.WepApi\Senai.Gufos.WepApi\bin\Debug\netcoreapp2.1\Senai.Gufos.WepApi.runtimeconfig.dev.json
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Gufos.WepApi\Senai.Gufos.WepApi\bin\Debug\netcoreapp2.1\Senai.Gufos.WepApi.dll
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Gufos.WepApi\Senai.Gufos.WepApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WepApi.csprojAssemblyReference.cache
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Gufos.WepApi\Senai.Gufos.WepApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WepApi.csproj.CoreCompileInputs.cache
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Gufos.WepApi\Senai.Gufos.WepApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WepApi.RazorAssemblyInfo.cache
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Gufos.WepApi\Senai.Gufos.WepApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WepApi.RazorAssemblyInfo.cs
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Gufos.WepApi\Senai.Gufos.WepApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WepApi.AssemblyInfoInputs.cache
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Gufos.WepApi\Senai.Gufos.WepApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WepApi.AssemblyInfo.cs
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Gufos.WepApi\Senai.Gufos.WepApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WepApi.RazorTargetAssemblyInfo.cache
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Gufos.WepApi\Senai.Gufos.WepApi\bin\Debug\netcoreapp2.1\Senai.Gufos.WepApi.pdb
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Gufos.WepApi\Senai.Gufos.WepApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WepApi.dll
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.Gufos.WepApi\Senai.Gufos.WepApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WepApi.pdb
