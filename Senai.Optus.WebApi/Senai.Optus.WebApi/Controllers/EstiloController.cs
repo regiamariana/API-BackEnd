@@ -20,7 +20,16 @@ namespace Senai.Optus.WebApi.Controllers
         [HttpGet]
         public IActionResult Listar()
         {
-            return Ok(estiloRepository.Listar());
+            try
+            {
+                return Ok(estiloRepository.Listar());
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
 
         [HttpPost]
@@ -35,6 +44,43 @@ namespace Senai.Optus.WebApi.Controllers
             {
                 return BadRequest(new { mensagem = "MEEEHH ERRO" + ex.Message });
             }
+        }
+
+        //COLOCAR AUTHORIZE AQUI [Authorize(Roles = "ADMINISTRADOR")]
+        [HttpGet("{id}")]
+        public IActionResult BuscarPorId(int id)
+        {
+            Estilos estilos = estiloRepository.BuscarPorId(id);
+            if (estilos == null)
+                return NotFound();
+            return Ok(estilos);
+        }
+
+        [HttpPut]
+        public IActionResult Atualizar(Estilos estilos)
+        {
+            try
+            {
+                // pesquisar uma categoria
+                Estilos EstiloBuscado = estiloRepository.BuscarPorId(estilos.IdEstilo);
+                // caso nao encontre, not found
+                if (EstiloBuscado == null)
+                    return NotFound();
+                // caso contrario, se ela for encontrada, eu atualizo pq quero
+                estiloRepository.Atualizar(estilos);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { mensagem = "erroh. penah." });
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Deletar(int id)
+        {
+            estiloRepository.Deletar(id);
+            return Ok();
         }
     }
 }
