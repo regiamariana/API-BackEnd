@@ -1,0 +1,11 @@
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.CGstore.WebApi\Senai.CGstore.WebApi\bin\Debug\netcoreapp2.1\Senai.CGstore.WebApi.deps.json
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.CGstore.WebApi\Senai.CGstore.WebApi\bin\Debug\netcoreapp2.1\Senai.CGstore.WebApi.runtimeconfig.json
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.CGstore.WebApi\Senai.CGstore.WebApi\bin\Debug\netcoreapp2.1\Senai.CGstore.WebApi.runtimeconfig.dev.json
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.CGstore.WebApi\Senai.CGstore.WebApi\bin\Debug\netcoreapp2.1\Senai.CGstore.WebApi.dll
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.CGstore.WebApi\Senai.CGstore.WebApi\obj\Debug\netcoreapp2.1\Senai.CGstore.WebApi.csprojAssemblyReference.cache
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.CGstore.WebApi\Senai.CGstore.WebApi\obj\Debug\netcoreapp2.1\Senai.CGstore.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.CGstore.WebApi\Senai.CGstore.WebApi\obj\Debug\netcoreapp2.1\Senai.CGstore.WebApi.RazorAssemblyInfo.cache
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.CGstore.WebApi\Senai.CGstore.WebApi\obj\Debug\netcoreapp2.1\Senai.CGstore.WebApi.RazorAssemblyInfo.cs
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.CGstore.WebApi\Senai.CGstore.WebApi\obj\Debug\netcoreapp2.1\Senai.CGstore.WebApi.AssemblyInfoInputs.cache
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.CGstore.WebApi\Senai.CGstore.WebApi\obj\Debug\netcoreapp2.1\Senai.CGstore.WebApi.AssemblyInfo.cs
+C:\Users\47425337800\Documents\sprint2Backend\API-BackEnd\Senai.CGstore.WebApi\Senai.CGstore.WebApi\obj\Debug\netcoreapp2.1\Senai.CGstore.WebApi.RazorTargetAssemblyInfo.cache
