@@ -27,7 +27,7 @@ namespace Senai.OpFlix.WebApi.Repositories
         {
             using (OpFlixContext ctx = new OpFlixContext())
             {
-                return ctx.Categoria.Find(id);
+                return ctx.Categoria.FirstOrDefault(x => x.Idcategoria == id);
             }
         }
 
@@ -42,7 +42,16 @@ namespace Senai.OpFlix.WebApi.Repositories
 
         public void Deletar(int id)
         {
-            throw new NotImplementedException();
+            using (OpFlixContext ctx = new OpFlixContext())
+            {
+                // encontrar o item
+                // chave primaria da tabela
+                Categoria Categoria = ctx.Categoria.Find(id);
+                // remover do contexto
+                ctx.Categoria.Remove(Categoria);
+                // efetivar as mudanças no banco de dados
+                ctx.SaveChanges();
+            }
         }
 
         public List<Categoria> Listar()
