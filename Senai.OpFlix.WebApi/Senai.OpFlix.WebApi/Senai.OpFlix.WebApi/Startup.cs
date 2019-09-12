@@ -48,7 +48,7 @@ namespace Senai.OpFlix.WebApi
                     // tempo de expiracao
                     ValidateLifetime = true,
                     // forma de criptografia
-                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("gufos-chave-autenticacao")),
+                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("OpFlix-chave-autenticacao")),
                     // tempo de expiracao
                     ClockSkew = TimeSpan.FromMinutes(30),
                     // quem esta enviando

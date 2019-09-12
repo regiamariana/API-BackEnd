@@ -1,4 +1,5 @@
-﻿using Senai.OpFlix.WebApi.Domains;
+﻿using Microsoft.EntityFrameworkCore;
+using Senai.OpFlix.WebApi.Domains;
 using Senai.OpFlix.WebApi.Interfaces;
 using Senai.OpFlix.WebApi.ViewModels;
 using System;
@@ -23,7 +24,13 @@ namespace Senai.OpFlix.WebApi.Repositories
 
         public Usuario BuscarPorEmailESenha(LoginViewModel login)
         {
-            throw new NotImplementedException();
+            using (OpFlixContext ctx = new OpFlixContext())
+            {
+                Usuario usuario = ctx.Usuario.Include(x => x.IdtipousuarioNavigation).FirstOrDefault(x => x.Email == login.Email && x.Senha == login.Senha);
+                if (usuario == null)
+                    return null;
+                return usuario;
+            }
         }
 
         public Usuario BuscarPorId(int id)

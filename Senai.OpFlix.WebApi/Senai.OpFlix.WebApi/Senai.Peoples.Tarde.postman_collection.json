@@ -1,0 +1,432 @@
+{
+	"info": {
+		"_postman_id": "7d898132-802a-47c4-b00b-69ee9ec8f3bb",
+		"name": "Senai.OpFlix.Tarde",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "GET /api/Categoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Categoria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /api/Categoria/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Categoria/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Categoria",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /api/Plataforma",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/plataforma",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"plataforma"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /api/Plataforma/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/plataforma/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"plataforma",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /api/Usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /api/Usuario/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/usuario/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuario",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "POST /api/Categoria",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\n    \"categoria1\": \"MARIANA\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Categoria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /api/Plataforma",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n       \r\n        \"plataforma1\": \"HBO GO\"\r\n       \r\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/plataforma",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"plataforma"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /api/Usuario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"CASSIA\",\r\n    \"email\": \"cassia@email.com\",\r\n    \"senha\": \"3118\",\r\n    \"telefone\": 779,\r\n    \"idtipousuario\": 1,\r\n    \"imagem\": \"aHR0cHM6Ly8zLmJwLmJsb2dzcG90LmNvbS8tLVUzVlpjdmg5NTQvV01sb000MV9mQkkvQUFBQUFBQUFKS3MvUE1UTjZhbGx5ZElXd1daVHJGWGZfNXJfN1VkcWZPLWNBQ0xjQi9zMTYwMC9jaGVja2VkX3VzZXIxNjAwLnBuZw==\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /api/Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t \"email\": \"rob@email.com\",\n        \"senha\": \"123458\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT",
+			"item": [
+				{
+					"name": "PUT /api/Categoria",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"idcategoria\": 11,\r\n        \"categoria1\": \"MARIANAH\"\r\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Categoria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /api/Plataforma",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idplataforma\": 4,\r\n        \"plataforma1\": \"primevideo\"\r\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/plataforma",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"plataforma"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /api/Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idusuario\": 7,\r\n        \"nome\": \"ROBERTO\",\r\n        \"email\": \"robes@email.com\",\r\n        \"senha\": \"123458\",\r\n        \"telefone\": 585,\r\n        \"idtipousuario\": 1,\r\n        \"imagem\": \"aHR0cHM6Ly8zLmJwLmJsb2dzcG90LmNvbS8tLVUzVlpjdmg5NTQvV01sb000MV9mQkkvQUFBQUFBQUFKS3MvUE1UTjZhbGx5ZElXd1daVHJGWGZfNXJfN1VkcWZPLWNBQ0xjQi9zMTYwMC9jaGVja2VkX3VzZXIxNjAwLnBuZw==\"\r\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "DELETE /api/Categoria/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Categoria/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Categoria",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /api/Plataforma/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/plataforma/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"plataforma",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /api/Usuario/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/usuario/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuario",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
