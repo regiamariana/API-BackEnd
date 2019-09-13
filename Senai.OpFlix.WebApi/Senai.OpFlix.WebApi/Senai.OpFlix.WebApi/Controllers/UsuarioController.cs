@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Senai.OpFlix.WebApi.Domains;
@@ -22,12 +23,14 @@ namespace Senai.OpFlix.WebApi.Controllers
             usuarioRepository = new UsuarioRepository();
         }
 
+        [Authorize]
         [HttpGet]
         public IActionResult Listar()
         {
             return Ok(usuarioRepository.Listar());
         }
 
+        [Authorize]
         [HttpGet("{id}")]
         public IActionResult BuscarPorId(int id)
         {
@@ -39,6 +42,7 @@ namespace Senai.OpFlix.WebApi.Controllers
            
         }
 
+        [Authorize(Roles = "ADM")]
         [HttpPost]
         public IActionResult Cadastrar(Usuario usuario)
         {
@@ -54,6 +58,7 @@ namespace Senai.OpFlix.WebApi.Controllers
             }
         }
 
+        [Authorize(Roles = "ADM")]
         [HttpPut]
         public IActionResult Atualizar(Usuario usuario)
         {
@@ -64,6 +69,7 @@ namespace Senai.OpFlix.WebApi.Controllers
             return Ok();
         }
 
+        [Authorize(Roles = "ADM")]
         [HttpDelete("{id}")]
         public IActionResult Deletar(int id)
         {
