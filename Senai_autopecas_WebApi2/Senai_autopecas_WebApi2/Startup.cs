@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Senai.OpFlix.WebApi
+namespace Senai_autopecas_WebApi2
 {
     public class Startup
     {
@@ -26,7 +26,7 @@ namespace Senai.OpFlix.WebApi
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "OpFlix API", Version = "v1" });
+                c.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "AutoPecas API", Version = "v1" });
             });
 
 
@@ -48,18 +48,13 @@ namespace Senai.OpFlix.WebApi
                     // tempo de expiracao
                     ValidateLifetime = true,
                     // forma de criptografia
-                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("OpFlix-chave-autenticacao")),
+                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("AutoPecas-chave-autenticacao")),
                     // tempo de expiracao
                     ClockSkew = TimeSpan.FromMinutes(30),
                     // quem esta enviando
-                    ValidIssuer = "OpFlix.WebApi",
-                    ValidAudience = "OpFlix.WebApi"
+                    ValidIssuer = "AutoPecas.WebApi",
+                    ValidAudience = "AutoPecas.WebApi"
                 };
-            });
-
-            services.AddCors(options =>
-            {
-                options.AddPolicy("CorsPolicy", builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials());
             });
         }
 
@@ -71,16 +66,13 @@ namespace Senai.OpFlix.WebApi
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors("CorsPolicy");
-            // habilita a autenticacao
             app.UseAuthentication();
-
 
             app.UseSwagger();
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "OpFlix API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "AutoPecas API V1");
             });
 
             app.UseMvc();

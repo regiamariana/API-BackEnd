@@ -1,0 +1,373 @@
+{
+	"info": {
+		"_postman_id": "cfe224cf-f324-409b-be53-fd725096db3f",
+		"name": "Senai.AutoPecas.Tarde",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "GET /api/Pecas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:49513/api/pecas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49513",
+							"path": [
+								"api",
+								"pecas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /api/Pecas/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:49513/api/pecas/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49513",
+							"path": [
+								"api",
+								"pecas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /api/Usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkhASC5DT00iLCJqdGkiOiIzIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQURNSU5JU1RSQURPUiIsImV4cCI6MTU2ODc1MDcwMSwiaXNzIjoiQXV0b1BlY2FzLldlYkFwaSIsImF1ZCI6IkF1dG9QZWNhcy5XZWJBcGkifQ.UNOrdZcOaF-6464qFwY6xBOqaCIjxu4QZ52JNl9EWFY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:49513/api/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49513",
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /api/Usuario/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkhASC5DT00iLCJqdGkiOiIzIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQURNSU5JU1RSQURPUiIsImV4cCI6MTU2ODc1MDcwMSwiaXNzIjoiQXV0b1BlY2FzLldlYkFwaSIsImF1ZCI6IkF1dG9QZWNhcy5XZWJBcGkifQ.UNOrdZcOaF-6464qFwY6xBOqaCIjxu4QZ52JNl9EWFY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:49513/api/usuario/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49513",
+							"path": [
+								"api",
+								"usuario",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "POST /api/Pecas",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigopeca\": \"PARACHOQUE4\",\r\n    \"descricao\": \"PARACHOQUE SIENA\",\r\n    \"peso\": 1,\r\n    \"precocusto\": 100,\r\n    \"precovenda\": 250,\r\n    \"idfornecedor\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49513/api/pecas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49513",
+							"path": [
+								"api",
+								"pecas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /api/Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"H@H.com\"\n\t,\"senha\": 132\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49513/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49513",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /api/Usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkhASC5DT00iLCJqdGkiOiIzIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQURNSU5JU1RSQURPUiIsImV4cCI6MTU2ODc1MDcwMSwiaXNzIjoiQXV0b1BlY2FzLldlYkFwaSIsImF1ZCI6IkF1dG9QZWNhcy5XZWJBcGkifQ.UNOrdZcOaF-6464qFwY6xBOqaCIjxu4QZ52JNl9EWFY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"email\": \"R@G.COM\",\r\n        \"senha\": \"678\",\r\n        \"permissao\": \"ADMINISTRADOR\",\r\n        \"fornecedores\": []\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49513/api/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49513",
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "PUT",
+			"item": [
+				{
+					"name": "PUT /api/Pecas",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idpeca\": 2,\r\n        \"codigopeca\": \"PNEU2\",\r\n        \"descricao\": \"PNEU ARO 15\",\r\n        \"peso\": 1,\r\n        \"precocusto\": 120,\r\n        \"precovenda\": 200,\r\n        \"idfornecedor\": 2\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49513/api/pecas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49513",
+							"path": [
+								"api",
+								"pecas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /api/Usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkhASC5DT00iLCJqdGkiOiIzIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQURNSU5JU1RSQURPUiIsImV4cCI6MTU2ODc1MDcwMSwiaXNzIjoiQXV0b1BlY2FzLldlYkFwaSIsImF1ZCI6IkF1dG9QZWNhcy5XZWJBcGkifQ.UNOrdZcOaF-6464qFwY6xBOqaCIjxu4QZ52JNl9EWFY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idusuario\": 2,\r\n        \"email\": \"T@T.CO\",\r\n        \"senha\": \"321\",\r\n        \"permissao\": \"COMUM\",\r\n        \"fornecedores\": []\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49513/api/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49513",
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "DELETE /api/Pecas/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49513/api/pecas/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49513",
+							"path": [
+								"api",
+								"pecas",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

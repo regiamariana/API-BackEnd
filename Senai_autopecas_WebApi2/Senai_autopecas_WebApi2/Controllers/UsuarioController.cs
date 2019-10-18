@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Senai.OpFlix.WebApi.Domains;
-using Senai.OpFlix.WebApi.Interfaces;
-using Senai.OpFlix.WebApi.Repositories;
+using Senai_autopecas_WebApi2.Domains;
+using Senai_autopecas_WebApi2.Interfaces;
+using Senai_autopecas_WebApi2.Repositories;
 
-namespace Senai.OpFlix.WebApi.Controllers
+namespace Senai_autopecas_WebApi2.Controllers
 {
     [Route("api/[controller]")]
     [Produces("application/json")]
@@ -34,17 +34,17 @@ namespace Senai.OpFlix.WebApi.Controllers
         [HttpGet("{id}")]
         public IActionResult BuscarPorId(int id)
         {
-            
-                Usuario usuario = usuarioRepository.BuscarPorId(id);
-                if (usuario == null)
-                    return NotFound();
-                return Ok(usuario);
-           
+
+            Usuarios usuario = usuarioRepository.BuscarPorId(id);
+            if (usuario == null)
+                return NotFound();
+            return Ok(usuario);
+
         }
 
-       //[Authorize(Roles = "ADMINISTRADOR")]
+        [Authorize(Roles = "ADMINISTRADOR")]
         [HttpPost]
-        public IActionResult Cadastrar(Usuario usuario)
+        public IActionResult Cadastrar(Usuarios usuario)
         {
             try
             {
@@ -60,21 +60,21 @@ namespace Senai.OpFlix.WebApi.Controllers
 
         [Authorize(Roles = "ADMINISTRADOR")]
         [HttpPut]
-        public IActionResult Atualizar(Usuario usuario)
+        public IActionResult Atualizar(Usuarios usuario)
         {
-            Usuario UsuarioBuscado = usuarioRepository.BuscarPorId(usuario.Idusuario);
+            Usuarios UsuarioBuscado = usuarioRepository.BuscarPorId(usuario.Idusuario);
             if (UsuarioBuscado == null)
                 return NotFound();
             usuarioRepository.Atualizar(usuario);
             return Ok();
         }
 
-        [Authorize(Roles = "ADMINISTRADOR")]
-        [HttpDelete("{id}")]
-        public IActionResult Deletar(int id)
-        {
-            usuarioRepository.Deletar(id);
-            return Ok();
-        }
+        //[Authorize(Roles = "ADMINISTRADOR")]
+        //[HttpDelete("{id}")]
+        //public IActionResult Deletar(int id)
+        //{
+        //    usuarioRepository.Deletar(id);
+        //    return Ok();
+        //}
     }
 }

@@ -7,14 +7,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
-using Senai.OpFlix.WebApi.Domains;
-using Senai.OpFlix.WebApi.Interfaces;
-using Senai.OpFlix.WebApi.Repositories;
-using Senai.OpFlix.WebApi.ViewModels;
+using Senai_autopecas_WebApi2.Domains;
+using Senai_autopecas_WebApi2.Interfaces;
+using Senai_autopecas_WebApi2.Repositories;
+using Senai_autopecas_WebApi2.ViewmModels;
 
-namespace Senai.OpFlix.WebApi.Controllers
+namespace Senai_autopecas_WebApi2.Controllers
 {
     [Route("api/[controller]")]
+    [Produces("application/json")]
     [ApiController]
     public class LoginController : ControllerBase
     {
@@ -31,7 +32,7 @@ namespace Senai.OpFlix.WebApi.Controllers
         {
             try
             {
-                Usuario usuarioBuscado = usuarioRepository.BuscarPorEmailESenha(login);
+                Usuarios usuarioBuscado = usuarioRepository.BuscarPorEmailESenha(login);
                 if (usuarioBuscado == null)
                     return NotFound(new { mensagem = "deu rui" });
 
@@ -40,17 +41,16 @@ namespace Senai.OpFlix.WebApi.Controllers
                     new Claim(JwtRegisteredClaimNames.Email, usuarioBuscado.Email),
                     new Claim(JwtRegisteredClaimNames.Jti, usuarioBuscado.Idusuario.ToString()),
                     // é a permissão do usuário
-                    new Claim(ClaimTypes.Role, usuarioBuscado.IdtipousuarioNavigation.Tipousuario1),
-                     new Claim("permissao", usuarioBuscado.IdtipousuarioNavigation.Tipousuario1)
+                    new Claim(ClaimTypes.Role, usuarioBuscado.Permissao),
                 };
 
-                var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("OpFlix-chave-autenticacao"));
+                var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("AutoPecas-chave-autenticacao"));
 
                 var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
                 var token = new JwtSecurityToken(
-                    issuer: "OpFlix.WebApi",
-                    audience: "OpFlix.WebApi",
+                    issuer: "AutoPecas.WebApi",
+                    audience: "AutoPecas.WebApi",
                     claims: claims,
                     expires: DateTime.Now.AddMinutes(30),
                     signingCredentials: creds);
