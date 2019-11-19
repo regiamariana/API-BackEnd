@@ -22,9 +22,9 @@ namespace Senai.OpFlix.WebApi.Controllers
         public CategoriaController()
         {
             categoriaRepository = new CategoriaRepository();
-        }
+        }   
 
-        [Authorize(Roles = "ADM")]
+        //[Authorize(Roles = "ADM")]
         [HttpGet]
         public IActionResult Listar()
         {

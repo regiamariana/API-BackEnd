@@ -43,7 +43,7 @@ namespace Senai.OpFlix.WebApi.Controllers
            
         }
 
-        [Authorize(Roles = "ADM")]
+        //[Authorize(Roles = "ADM")]
         [HttpPost]
         public IActionResult Cadastrar(Lancamentos lancamentos)
         {
